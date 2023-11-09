@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    font: 18px;
+    
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: min-content;
+    
+}
+
+.Horizontal{
+    gap: 30px;
+    max-height: max-content;
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     color: #009d95;
+ }
+.Horizontal li:hover{
+    color:#e8999f;
+}
+.Horizontal li{   
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+.SubMenu{
+    display: none;
+}
+.SubMenu a{
+ flex-direction: column;
+ color: red;
+ text-decoration: none;
+}
+.producto{
+    display: flex;
+    background-image: url(https://planet-skin.com/cdn/shop/files/1_10_1000x.jpg?v=1698236253);
+    flex-direction: column;
+    justify-content: left;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap-reverse;
+}
+main h1{
+    size: 800px;
+    color: white;
+}
+footer .globo{
+    position: fixed;
+    width: 100%;
+    background-color: #e8999f;
+    gap: 10px;
+}
+@media (max-width:480px ){
+    .Horizontal{ background-color: coral }  
+}
+@media(min-width:700px){
+    .Horizontal{background-color: #e8999f};
+    
+}
